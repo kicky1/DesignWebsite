@@ -5,6 +5,7 @@ import { Marginer } from "../../components/marginer";
 import Navbar from "../../components/navbar";
 import AboutUs from "./aboutUs";
 import BetweenWrap from "./betweenWrapper";
+import PortfolioSection from "./portfolio";
 import TopSection from "./topSection";
 
 const PageContainer = styled.div`
@@ -28,6 +29,8 @@ function HomePage() {
         <AboutUs/>
         <Marginer direction="vertical" margin="6em"/>
         <BetweenWrap slogan="Meet WERK12, a 9,600m2 mixed-used development"/>
+        <Marginer direction="vertical" margin="6em"/>
+        <PortfolioSection/>
     </PageContainer>
 }
 
