@@ -23,9 +23,11 @@ function HomePage() {
         <Navbar/>
         <TopSection/>
         <Marginer direction="vertical" margin="1em"/>
-        <BetweenWrap/>
+        <BetweenWrap slogan="From single-family homes to public buildings in 47 countries"/>
+        <Marginer direction="vertical" margin="6em"/>
         <AboutUs/>
-        <Marginer direction="vertical" margin="1em"/>
+        <Marginer direction="vertical" margin="6em"/>
+        <BetweenWrap slogan="Meet WERK12, a 9,600m2 mixed-used development"/>
     </PageContainer>
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { isPropertySignature } from "typescript";
 import { SCREENS } from "../../components/responsive";
 
 const WrapperContainer = styled.div`
@@ -43,10 +44,15 @@ const Slogan = styled.h1`
         }
 `;
 
-function BetweenWrap(){
+type WrapProps = {
+    slogan: string,
+}
+
+function BetweenWrap(props:WrapProps){
     return <WrapperContainer>
         <Slogan>
-            From single-family homes to public buildings in 47 countries
+            {/* From single-family homes to public buildings in 47 countries */}
+            {props.slogan}
         </Slogan>
     </WrapperContainer>
 }
